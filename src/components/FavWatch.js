@@ -40,7 +40,7 @@ class FavWatch extends Component {
     render() {
         return (
             <>
-                <Row xs={3} style={{ "height": "400px"}}>
+                <Row xs={3}>
                     {this.state.showWatches && this.state.likedWatches.map((watch, i) => {
                         return (
                             <Col>
@@ -48,7 +48,9 @@ class FavWatch extends Component {
                                     <Card.Img variant="top" src={watch.image} style={{
                                         "width": "400px",
                                         "height": "400px",
-                                        "object- fit": "cover"}} />
+                                        "object- fit": "cover",
+                                        "background-image":"url('https://image.made-in-china.com/2f0j00GsZQzwuEqfYb%E2%80%A6tches-Gold-Watches-Men-Wrist-Waterproof-Watch.jpg')"
+                                        }} />
                                     <Card.Body>
                                         <Card.Title>{watch.title}</Card.Title>
                                         <Card.Text>Description: {watch.description}</Card.Text>
