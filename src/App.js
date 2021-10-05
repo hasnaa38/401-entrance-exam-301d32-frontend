@@ -18,10 +18,10 @@ export class App extends Component {
         {/* @todo show logout button (ABOVE) and show items list components for authenticated users */}
         {this.props.auth0.isAuthenticated &&
           <Switch>
-            <Route exact path='/'><Home email={this.props.auth0.user.email} /></Route>
-            <Route path='/likes'><FavWatch email={this.props.auth0.user.email} /></Route>
+            <Route exact path='/'><Home email={this.props.auth0.user.email} style={{"heigh":"fit-content"}}/></Route>
+            <Route path='/likes'><FavWatch email={this.props.auth0.user.email} style={{"heigh":"fit-content"}}/></Route>
           </Switch>}
-        <Footer />
+        <Footer/>
       </Router>
     )
   }
